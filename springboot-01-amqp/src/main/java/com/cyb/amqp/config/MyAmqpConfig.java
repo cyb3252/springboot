@@ -1,0 +1,19 @@
+package com.cyb.amqp.config;
+
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
+import org.springframework.amqp.support.converter.MessageConverter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author cyb
+ * @date 2018/12/15 - 16:49
+ */
+@Configuration
+public class MyAmqpConfig {
+
+    @Bean
+    public MessageConverter messageConverter () {
+        return new Jackson2JsonMessageConverter();
+    }
+}
