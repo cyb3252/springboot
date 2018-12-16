@@ -1,0 +1,6 @@
+docker安装rabbitMQ步骤
+    1、在dockerhub上找到rabbitmq的版本或者通过docker search rabbitmq来显示可以下载的版本
+    2、docker pull registry.docker-cn.com/library/rabbitmq:3-management  :后面是mq的版本
+    3、docker images找到rabbitmq的镜像id
+    4、docker run -d -p 5672:5672 -p 15672:15672 --name myrabbitmq d69a5113ceae 运行rabbitmq
+        d69a5113ceae这是第三步得到的镜像id

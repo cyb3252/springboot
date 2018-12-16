@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.atguigu</groupId>
-    <artifactId>springboot-01-cache</artifactId>
+    <artifactId>springboot-03-cache</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>springboot-01-cache</name>
+    <name>springboot-03-cache</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

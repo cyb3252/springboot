@@ -1,0 +1,21 @@
+docker安装elasticsearch并运行
+    1、docker search elasticsearch  --搜索elasticsearch的版本
+    2、docker pull registry.docker-cn.com/library/elasticsearch --安装
+    3、docker images --查看镜像的imageid
+    4、docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9200:9200 -p 9300:9300 --name es01 5acf0e8da90b
+        --注意 elasticsearch是java代码写的，默认会占用2个g的运行内存 通过-e设置堆得大小
+    5、docker ps 查看是否启动成功
+    6、浏览器测试  虚拟机ip地址+端口号 浏览器显示如下json数据即可
+        {
+          "name" : "isi6EpV",
+          "cluster_name" : "elasticsearch",
+          "cluster_uuid" : "MoeTYeOKSZWVKY8yDYRwiA",
+          "version" : {
+            "number" : "5.6.12",
+            "build_hash" : "cfe3d9f",
+            "build_date" : "2018-09-10T20:12:43.732Z",
+            "build_snapshot" : false,
+            "lucene_version" : "6.6.1"
+          },
+          "tagline" : "You Know, for Search"
+        }
