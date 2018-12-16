@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cyb</groupId>
-    <artifactId>springboot-03-elastic</artifactId>
+    <artifactId>springboot-01-amqp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-03-elastic</name>
+    <name>springboot-01-amqp</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
