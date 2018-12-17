@@ -15,7 +15,7 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 public class MyRedisConfig {
 
     @Bean
-    public RedisTemplate<Object,Object> myRedisTemplate(RedisConnectionFactory redisConnectionFactory){
+    public RedisTemplate<Object, Object> myRedisTemplate (RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(redisConnectionFactory);
         Jackson2JsonRedisSerializer<Object> serializer = new Jackson2JsonRedisSerializer<>(Object.class);
@@ -25,7 +25,7 @@ public class MyRedisConfig {
 
     //CacheManagerCustomizers可以来定制一些缓存规则
     @Bean
-    public RedisCacheManager myRedisCacheManager(RedisTemplate<Object, Object> myRedisTemplate){
+    public RedisCacheManager myRedisCacheManager (RedisTemplate<Object, Object> myRedisTemplate) {
         RedisCacheManager cacheManager = new RedisCacheManager(myRedisTemplate);
         //key多了一个前缀
 

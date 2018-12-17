@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * 测试缓存
- *  原理：CacheManager===Cache 缓存组件来实际给缓存中存取数据
+ * 原理：CacheManager===Cache 缓存组件来实际给缓存中存取数据
  */
 @SpringBootApplication
 @EnableCaching

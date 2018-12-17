@@ -26,14 +26,14 @@ public class Springboot02ElasticApplicationTests {
     BookRepository bookRepository;
 
     @Test
-    public void testEsSearch(){
+    public void testEsSearch () {
         for (Book book : bookRepository.findByBookNameLike("游")) {
             System.out.println(book);
         }
     }
 
     @Test
-    public void testIndex(){
+    public void testIndex () {
         Book book = new Book(1, "西游记", "吴承恩");
         bookRepository.index(book);
     }
@@ -44,7 +44,7 @@ public class Springboot02ElasticApplicationTests {
     @Test
     public void contextLoads () {
         //给es中索引(保存)一个文档
-        Article article = new Article(1,"haoxiaoxi","zhansan","helloworld");
+        Article article = new Article(1, "haoxiaoxi", "zhansan", "helloworld");
         //构建一个索引功能
         Index index = new Index.Builder(article).index("hello").type("news").build();
 
@@ -62,9 +62,9 @@ public class Springboot02ElasticApplicationTests {
      * 测试Jest 查询
      */
     @Test
-    public void testSearch(){
+    public void testSearch () {
         //查询表达式
-        String json="{\n" +
+        String json = "{\n" +
                 "    \"query\": {\n" +
                 "        \"match\": {\n" +
                 "            \"content\": \"helloworld\"\n" +

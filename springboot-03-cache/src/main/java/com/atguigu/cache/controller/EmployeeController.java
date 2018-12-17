@@ -17,30 +17,31 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @GetMapping("/emp/{id}")
-    public Employee getEmp(@PathVariable Integer id){
+    public Employee getEmp (@PathVariable Integer id) {
         Employee employee = employeeService.getEmployee(id);
         return employee;
     }
 
     /**
      * 这里为了方便，使用的是参数拼接的方式，来完成调用的
+     *
      * @param employee
      * @return
      */
     @GetMapping("/emp")
-    public Employee updateEmp(Employee employee){
+    public Employee updateEmp (Employee employee) {
         Employee emp = employeeService.updateEmp(employee);
         return emp;
     }
 
     @GetMapping("/delemp/{id}")
-    public String deleteEmp(@PathVariable Integer id){
+    public String deleteEmp (@PathVariable Integer id) {
         employeeService.deleteEmp(id);
         return "success";
     }
 
     @GetMapping("/emp/lastName/{lastName}")
-    public Employee getEmpByLastName(@PathVariable String lastName){
+    public Employee getEmpByLastName (@PathVariable String lastName) {
         Employee emp = employeeService.getEmpByLastName(lastName);
         return emp;
     }
