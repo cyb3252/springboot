@@ -1,4 +1,4 @@
-package com.atguigu.cache.bean;
+package com.cyb.cache.bean;
 
 import java.io.Serializable;
 

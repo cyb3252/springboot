@@ -1,6 +1,6 @@
-package com.atguigu.cache.mapper;
+package com.cyb.cache.mapper;
 
-import com.atguigu.cache.bean.Employee;
+import com.cyb.cache.bean.Employee;
 import org.apache.ibatis.annotations.*;
 
 /**

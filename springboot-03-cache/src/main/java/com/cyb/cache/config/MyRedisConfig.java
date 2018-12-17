@@ -1,4 +1,4 @@
-package com.atguigu.cache.config;
+package com.cyb.cache.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,6 @@
-package com.atguigu.cache.mapper;
+package com.cyb.cache.mapper;
 
-import com.atguigu.cache.bean.Department;
+import com.cyb.cache.bean.Department;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

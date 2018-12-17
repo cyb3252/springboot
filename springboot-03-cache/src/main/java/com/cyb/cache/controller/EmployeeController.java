@@ -1,7 +1,7 @@
-package com.atguigu.cache.controller;
+package com.cyb.cache.controller;
 
-import com.atguigu.cache.bean.Employee;
-import com.atguigu.cache.service.EmployeeService;
+import com.cyb.cache.bean.Employee;
+import com.cyb.cache.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

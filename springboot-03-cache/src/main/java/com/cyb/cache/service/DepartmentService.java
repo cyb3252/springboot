@@ -1,7 +1,7 @@
-package com.atguigu.cache.service;
+package com.cyb.cache.service;
 
-import com.atguigu.cache.bean.Department;
-import com.atguigu.cache.mapper.DepartmentMapper;
+import com.cyb.cache.bean.Department;
+import com.cyb.cache.mapper.DepartmentMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

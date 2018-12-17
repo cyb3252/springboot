@@ -1,7 +1,7 @@
-package com.atguigu.cache.controller;
+package com.cyb.cache.controller;
 
-import com.atguigu.cache.bean.Department;
-import com.atguigu.cache.service.DepartmentService;
+import com.cyb.cache.bean.Department;
+import com.cyb.cache.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

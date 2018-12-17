@@ -1,7 +1,7 @@
-package com.atguigu.cache;
+package com.cyb.cache;
 
-import com.atguigu.cache.bean.Employee;
-import com.atguigu.cache.mapper.EmployeeMapper;
+import com.cyb.cache.bean.Employee;
+import com.cyb.cache.mapper.EmployeeMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

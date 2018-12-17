@@ -1,7 +1,7 @@
-package com.atguigu.cache.service;
+package com.cyb.cache.service;
 
-import com.atguigu.cache.bean.Employee;
-import com.atguigu.cache.mapper.EmployeeMapper;
+import com.cyb.cache.bean.Employee;
+import com.cyb.cache.mapper.EmployeeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;

@@ -1,4 +1,4 @@
-package com.atguigu.cache.controller;
+package com.cyb.cache.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
