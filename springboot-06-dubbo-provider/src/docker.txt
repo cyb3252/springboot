@@ -1,0 +1,5 @@
+#docker 安装zookeeper
+1、docker pull registry.docker-cn.com/library/zookeeper:3.4.11  #:后面为zookeeper的版本号
+2、docker images  #查找出zookeeper的镜像id
+3、docker run --name zk01 -p 2181:2181 --restart always -d 56d414270ae3  #启动zookeeper 暴露端口
+4、docker ps #查看zookeeper的启动信息
